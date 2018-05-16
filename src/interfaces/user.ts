@@ -1,0 +1,21 @@
+export interface IUser{
+    uid:string;
+    email:string;
+    password:string;
+    firstname:string;
+    surname:string;
+    nickname:string;
+    grade:string;
+    school:string;
+    province:string;
+    gender:string;
+    dob:string;
+    profileUrl:string;
+    bgcolor:string;
+    txtcolor:string;
+    moderator:boolean;
+    numpics:number;
+    updatedprofile:boolean;
+    homesound:boolean;
+    commentsound:boolean;
+}

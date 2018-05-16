@@ -33,6 +33,39 @@ import {
 declare global {
 
   namespace StencilComponents {
+    interface AppTeststuff {
+
+    }
+  }
+
+  interface HTMLAppTeststuffElement extends StencilComponents.AppTeststuff, HTMLStencilElement {}
+
+  var HTMLAppTeststuffElement: {
+    prototype: HTMLAppTeststuffElement;
+    new (): HTMLAppTeststuffElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-teststuff': HTMLAppTeststuffElement;
+  }
+  interface ElementTagNameMap {
+    'app-teststuff': HTMLAppTeststuffElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-teststuff': JSXElements.AppTeststuffAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppTeststuffAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface AppHome {
 
     }
@@ -91,6 +124,105 @@ declare global {
   namespace JSXElements {
     export interface AppProfileAttributes extends HTMLAttributes {
       'name'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppStart {
+
+    }
+  }
+
+  interface HTMLAppStartElement extends StencilComponents.AppStart, HTMLStencilElement {}
+
+  var HTMLAppStartElement: {
+    prototype: HTMLAppStartElement;
+    new (): HTMLAppStartElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-start': HTMLAppStartElement;
+  }
+  interface ElementTagNameMap {
+    'app-start': HTMLAppStartElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-start': JSXElements.AppStartAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppStartAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppTabs {
+
+    }
+  }
+
+  interface HTMLAppTabsElement extends StencilComponents.AppTabs, HTMLStencilElement {}
+
+  var HTMLAppTabsElement: {
+    prototype: HTMLAppTabsElement;
+    new (): HTMLAppTabsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-tabs': HTMLAppTabsElement;
+  }
+  interface ElementTagNameMap {
+    'app-tabs': HTMLAppTabsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-tabs': JSXElements.AppTabsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppTabsAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppTest {
+
+    }
+  }
+
+  interface HTMLAppTestElement extends StencilComponents.AppTest, HTMLStencilElement {}
+
+  var HTMLAppTestElement: {
+    prototype: HTMLAppTestElement;
+    new (): HTMLAppTestElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-test': HTMLAppTestElement;
+  }
+  interface ElementTagNameMap {
+    'app-test': HTMLAppTestElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-test': JSXElements.AppTestAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppTestAttributes extends HTMLAttributes {
+
     }
   }
 }

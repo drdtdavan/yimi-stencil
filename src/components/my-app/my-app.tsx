@@ -1,11 +1,14 @@
+
 import '@ionic/core';
 import { Component, Prop, Listen } from '@stencil/core';
+import {User} from '../../singletons/user'
 
 @Component({
   tag: 'my-app',
   styleUrl: 'my-app.scss'
 })
 export class MyApp {
+
 
   @Prop({ connect: 'ion-toast-controller' }) toastCtrl: HTMLIonToastControllerElement;
 
@@ -28,14 +31,20 @@ export class MyApp {
     await toast.present();
     await toast.onWillDismiss()
     window.location.reload();
+   
   }
 
   render() {
+    User.firstname="dion davan";
     return (
       <ion-app>
         <ion-router useHash={false}>
-          <ion-route url='/' component='app-home'></ion-route>
+          <ion-route url='/' component='app-start'></ion-route>
           <ion-route url='/profile/:name' component='app-profile'></ion-route>
+     
+          <ion-route url='/home' component='app-home'></ion-route>
+          <ion-route url='/tabs' component='app-tabs'></ion-route>
+
         </ion-router>
         <ion-nav></ion-nav>
       </ion-app>
